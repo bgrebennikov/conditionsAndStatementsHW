@@ -18,7 +18,26 @@ public class Main {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
 
+        // Task 2
+        int clientDeviceYear = 2015;
+        System.out.printf("\nГод выпуска устройства: %s \n", clientDeviceYear);
 
+        switch (clientOS) {
+            case ClientOS.IOS:
+                if (clientDeviceYear < 2015) {
+                    System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+                } else {
+                    System.out.println("Установите версию приложения для iOS по ссылке");
+                }
+                break;
+            case ClientOS.ANDROID:
+                if (clientDeviceYear < 2015) {
+                    System.out.println("Установите облегченную версию приложения для Android по ссылке");
+                } else {
+                    System.out.println("Установите версию приложения для Android по ссылке");
+                }
+                break;
+        }
 
 
     }
