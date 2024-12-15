@@ -11,7 +11,7 @@ public class Main {
 
 
         // Task 1
-        int clientOS = OS.IOS; // 0 - IOS 1 - Android
+        int clientOS = OS.IOS; // Это для удобства, сути не меняет. Можно легко ошибиться если использовать только числовые значения!
         if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         } else {
