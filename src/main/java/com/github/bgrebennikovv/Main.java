@@ -51,5 +51,25 @@ public class Main {
             System.out.println(year + " год не является високосным.");
         }
 
+        // Task 4
+        int deliveryDistance = 95;
+
+        int deliveryDays = 0;
+
+        if (deliveryDistance <= 20) {
+            deliveryDays = 1;
+        } else if (deliveryDistance <= 60) {
+            deliveryDays = 2;
+        } else if (deliveryDistance <= 100) {
+            deliveryDays = 3;
+        } else {
+            System.out.println("\nДоставка невозможна.");
+        }
+
+        System.out.printf("""
+                Расстояние до клиента: %s
+                Потребуется дней: %s
+                """, deliveryDistance, deliveryDays);
+
     }
 }
